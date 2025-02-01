@@ -1,0 +1,145 @@
+#heading {
+    text-align: center;
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#instructions {
+    margin-left: 20px;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#options {
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #f1f1f1;
+}
+
+.option.selected {
+    background-color: #ffd966;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #76c7c0;
+    width: 0;
+    transition: width 0.1s linear;
+}
+
+.option:hover {
+    background-color: #dce7ff;
+    border-color: #90caf9;
+}
+
+#Skip, #next {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 30px;
+}
+
+#Skip:hover, #next:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fillProgressBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#score {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 48%;
+}
+
+@media (width < 321px) {
+    #heading {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #Skip, #next, #score {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    #Skip:hover, #next:hover, #score:hover {
+        background-color: #0056b3;
+    }
+
+    #score {
+        padding: 10px 20px;
+        margin-top: 15px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}

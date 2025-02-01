@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QuizCraft</title>
+</head>
+<body>
+    
+    <h1 id="heading">Quiz</h1>
+
+    <div id="instructions"> 
+        <h2>Instructions:</h2>
+        <p>1. This quiz contains 10 questions.</p>
+        <p>2. Each question carries 1 mark.</p>
+        <p>3. Refresh The Page To Start The Quiz.</p>
+        <p>4. You have 15 seconds to answer each question.</p>
+    </div>
+
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <div id="question"></div>
+
+        <div id="options">
+            <div class="option" onclick="selectOption(0)"> </div>
+            <div class="option" onclick="selectOption(1)"> </div>
+            <div class="option" onclick="selectOption(2)"> </div>
+            <div class="option" onclick="selectOption(3)"> </div>
+        </div>
+
+        <button id="Skip">Skip</button>
+        <button id="next" disabled>Next</button>
+    </div>
+
+    <button id="score">Score</button>
+  
+    <script src="script1.js">
+        
+    </script>
+
+</body>
+</html>
